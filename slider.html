@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>はじめてのスライダー</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          mode: "fade",
+          captions: true,
+          slideWidth: 600,
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>はじめてのHTML</h1>
+    こちらはVscodeを使用して作成しています。
+    <div class="slider">
+      <div>
+        <img src="images/pic1.jpg" title="Funky roots" />
+      </div>
+      <div>
+        <img src="images/pic2.jpg" title="Funky roots" />
+      </div>
+      <div>
+        <img src="images/pic3.jpg" title="Funky roots" />
+      </div>
+    </div>
+  </body>
+</html>
